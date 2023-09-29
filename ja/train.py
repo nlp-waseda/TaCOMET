@@ -13,7 +13,7 @@ EFFECT_TOKEN = 'xEffect'
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--graph_jsonl', default='data/train.jsonl')
+    parser.add_argument('--graph_jsonl', default='data/mrph_train.jsonl')
     parser.add_argument('--model_name_or_path', default='nlp-waseda/gpt2-xl-japanese')
     parser.add_argument('--from_comet', action="store_true", default=False)
     parser.add_argument('--output_dir', default="./")
