@@ -6,7 +6,7 @@ Existing COMET models were trained to build TaCOMET, using event commonsense kno
 This repository includes Japanese / English versions of TimeATOMIC and the links to the model pages in Hugging Face.
 The training scripts are also included in each folder.
 
-These were introduced in [NLP2024](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P3-19.pdf).
+These are introduced in [NLP2024](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P3-19.pdf) and LREC-COLING2024 (TBA).
 
 ### Data
 ```
