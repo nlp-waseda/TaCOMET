@@ -44,7 +44,7 @@ Note that the Japanese one is trained with Juman++ pre-process.
 
 ### References
 ```bibtex
-@InProceedings{murata_nlp2023_tacomet,
+@InProceedings{murata_nlp2024_tacomet,
     author =    "村田栄樹 and 河原大輔",
     title =     "TaCOMET: 時間を考慮したイベント常識生成モデル",
     booktitle = "言語処理学会第30回年次大会",
