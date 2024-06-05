@@ -6,7 +6,7 @@ Existing COMET models were trained to build TaCOMET, using event commonsense kno
 This repository includes Japanese / English versions of TimeATOMIC and the links to the model pages in Hugging Face.
 The training scripts are also included in each folder.
 
-These are introduced in [NLP2024](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P3-19.pdf) and LREC-COLING2024 (TBA).
+These are introduced in [NLP2024](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P3-19.pdf) and [LREC-COLING2024](https://aclanthology.org/2024.lrec-main.1405/).
 
 ### Data
 ```
@@ -44,13 +44,23 @@ Note that the Japanese one is trained with Juman++ pre-process.
 
 ### References
 ```bibtex
-@InProceedings{murata_nlp2024_tacomet,
-    author =    "村田栄樹 and 河原大輔",
-    title =     "TaCOMET: 時間を考慮したイベント常識生成モデル",
-    booktitle = "言語処理学会第30回年次大会",
-    year =      "2024",
-    url =       "https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P3-19.pdf"
-    note =      "in Japanese"
+@inproceedings{murata-kawahara-2024-time-aware,
+    title = "Time-aware {COMET}: A Commonsense Knowledge Model with Temporal Knowledge",
+    author = "Murata, Eiki  and
+      Kawahara, Daisuke",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1405",
+    pages = "16162--16174",
+    abstract = "To better handle commonsense knowledge, which is difficult to acquire in ordinary training of language models, commonsense knowledge graphs and commonsense knowledge models have been constructed. The former manually and symbolically represents commonsense, and the latter stores these graphs{'} knowledge in the models{'} parameters. However, the existing commonsense knowledge models that deal with events do not consider granularity or time axes. In this paper, we propose a time-aware commonsense knowledge model, TaCOMET. The construction of TaCOMET consists of two steps. First, we create TimeATOMIC using ChatGPT, which is a commonsense knowledge graph with time. Second, TaCOMET is built by continually finetuning an existing commonsense knowledge model on TimeATOMIC. TimeATOMIC and continual finetuning let the model make more time-aware generations with rich commonsense than the existing commonsense models. We also verify the applicability of TaCOMET on a robotic decision-making task. TaCOMET outperformed the existing commonsense knowledge model when proper times are input. Our dataset and models will be made publicly available.",
 }
-
 ```
